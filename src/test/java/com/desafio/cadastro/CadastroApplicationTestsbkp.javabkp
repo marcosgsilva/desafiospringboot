@@ -1,0 +1,12 @@
+package com.desafio.cadastro;
+
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class CadastroApplicationTestsbkp {
+
+//	@Test
+//	void contextLoads() {
+//	}
+
+}
