@@ -29,7 +29,6 @@ public class UserController {
 
     @CrossOrigin(origins =  "*", allowedHeaders = "*")
     @PostMapping("/users")
-    @Tag(name = "Usuário", description = "Cadastro de usuário")
     @ApiResponse(responseCode = "200", content = { @Content(schema = @Schema()) })
     @ApiResponse(responseCode = "400", content = { @Content(schema = @Schema()) })
     public ResponseEntity<ResponseApi> saveMode(@RequestBody @Valid UserRequestDTO data){
@@ -39,7 +38,6 @@ public class UserController {
     }
 
     @CrossOrigin(origins =  "*", allowedHeaders = "*")
-    @Tag(name = "Usuário", description = "Cadastro de usuário")
     @GetMapping("/users")
     public List<UserResponseDTO> getAll(){
         List<UserResponseDTO> user = service.getAll();
